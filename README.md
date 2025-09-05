@@ -6,9 +6,9 @@
 
 University of Ljubljana, Faculty of Computer and Information Science
 
-[![arXiv](https://img.shields.io/badge/arXiv-TODO-b31b1b.svg)](https://arxiv.org/abs/TODO)
+[![arXiv](https://img.shields.io/badge/arXiv-2509.02101-b31b1b.svg)](https://arxiv.org/abs/2509.02101)
 
-[**Overveiw**](#overview) | [**Get Started**](#get-started) | [**Results**](#pretrained-weights-and-results) | [**Reference**](#reference) | [**Questions**](#questions)
+[**Overview**](#overview) | [**Get Started**](#get-started) | [**Results**](#pretrained-weights-and-results) | [**Reference**](#reference) | [**Questions**](#questions)
 
 </div>
 
