@@ -89,7 +89,6 @@ def train(args):
         args.data_path
         + "/"
         + args.category
-        + f"/{args.n_clusters}_clusters"
         + "/train/good/"
     )
     model = get_model().cuda()
