@@ -55,7 +55,6 @@ def create_refined_masks(i, mask, bg, save_path, palette):
     mask = mask.astype(np.uint8)
     pi = Image.fromarray(mask, 'P')
     pi.putpalette(palette)
-    pi.show()
     pi.save(f"{save_path}/{i}_refined_seg.png")
 
 def create_noisy_masks(dataset, c, backbone):

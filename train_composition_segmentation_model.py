@@ -83,7 +83,7 @@ def test(testset, model, save_path, test_partition):
 
 
 def train(args):
-    save_path = args.log_path + "/" + args.category
+    save_path = args.log_path + "/" + args.category + "/"
     os.makedirs(save_path, exist_ok=True)
     path = (
         args.data_path
@@ -91,8 +91,9 @@ def train(args):
         + args.category
         + "/train/good/"
     )
+    
     model = get_model().cuda()
-    optimizer = optim.AdamW(model.parameters(), lr=5e-4)
+    optimizer = optim.AdamW(model.parameters(), lr=1e-4)
     scheduler = optim.lr_scheduler.MultiStepLR(
         optimizer,
         [100],
@@ -168,7 +169,7 @@ if __name__ == "__main__":
     parser.add_argument("--img-path", default="./data/mvtec_loco")
     parser.add_argument(
         "--data-path",
-        default=".data/mvtec_loco_noisy_composition_maps",
+        default="./data/mvtec_loco_noisy_composition_maps",
     )
     parser.add_argument(
         "--log-path", default="./data/mvtec_loco_composition_maps"
